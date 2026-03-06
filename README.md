@@ -2,6 +2,15 @@
 Paper list for automated essay scoring (AES) from 2015 to now.
 
 ## 2025
+
++ **KAES: Multi-aspect Shared Knowledge Finding and Aligning for Cross-prompt Automated Scoring of Essay Traits**
+  + Authors: Xia Li, Wenjing Pan
+  + Conference: AAAI
+  + Link:https://doi.org/10.1609/aaai.v39i23.34626
+  + <details>
+      <summary>Abstract</summary>
+       Cross-prompt automated essay scoring (AES) aims to train models using essays from different source prompts and test them on new target prompt essays. A core challenge of the task is to learn as much shared knowledge as possible between essays from different prompts in order to better represent new prompt essays. Previous studies primarily focus on learning this knowledge on a general, coarse-grained level, ignoring that the shared knowledge among prompts is highly detailed and contains a more comprehensive range of information that is not fully investigated. In this paper, we propose a novel multi-aspect knowledge finding and aligning optimization strategy to better acquire this detailed various shared knowledge. We also introduce LLM to extract explicit, interpretable knowledge from implicit, multi-aspect shared knowledge and use this knowledge to improve the representation and evaluation performance of new prompt essays. We conduct extensive experiments on public datasets. The results show that our approach outperforms current state-of-the-art models and is effective on cross-prompt AES. 
+    </details>
 + **Can LLMs Clarify? Investigation and Enhancement of Large Language Models on Argument Claim Optimization**
   + Authors: Yiran Wang, Ben He, Xuanang Chen, Le Sun
   + Conference: COLING
