@@ -2,22 +2,29 @@
 Paper list for automated essay scoring (AES) from 2015 to now.
 
 ## 2025
-
++ **CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment**
+  + Authors: Xia Li, Wenjing Pan
+  + Conference:ACL
+  + Link: https://aclanthology.org/2025.acl-long.1273/
+  + <details>
+    <summary>Abstract</summary>
+    Most current automated essay quality assessment systems treat score prediction and feedback generation as separate tasks, overlooking the fact that scores provide a quantitative evaluation of quality, while feedback offers a qualitative assessment. Both aspects reflect essay quality from different perspectives, and they are inherently consistent and can reinforce each other. In this paper, we propose a novel bidirectional reinforcement learning framework that effectively utilizes this consistency constraint to jointly optimize score prediction and feedback generation, ensuring mutual reinforcement and alignment between them. In this way, our model is hope to obtain a simultaneous accurate ratings and consistent text feedback. We conducted extensive experiments on publicly available datasets. The results demonstrate that our approach surpasses the current state-of-the-art models, enhancing both scoring accuracy and feedback quality.
+    </details>
++ **Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring**
+  + Authors:Po-Kai Chen, Bo-Wei Tsai, Shao Kuan Wei, Chien-Yao Wang, Jia-Ching Wang, Yi-Ting Huang
+  + Conference:ACL
+  + Link: https://aclanthology.org/2025.acl-long.884/
+  + <details>
+    <summary>Abstract</summary>
+    Automated Essay Scoring (AES) plays a crucial role in language assessment. In particular, cross-prompt essay trait scoring provides learners with valuable feedback to improve their writing skills. However, due to the scarcity of prompts, most existing methods overlook critical information, such as content from prompts or essays, resulting in incomplete assessment perspectives. In this paper, we propose a robust AES framework, the Mixture of Ordered Scoring Experts (MOOSE), which integrates information from both prompts and essays. MOOSE employs three specialized experts to evaluate (1) the overall quality of an essay, (2) the relative quality across multiple essays, and (3) the relevance between an essay and its prompt. MOOSE introduces the ordered aggregation of assessment results from these experts along with effective feature learning techniques. Experimental results demonstrate that MOOSE achieves exceptionally stable and state-of-the-art performance in both cross-prompt scoring and multi-trait scoring on the ASAP++ dataset. The source code is released at https://github.com/antslabtw/MOOSE-AES.
+    </details>
 + **KAES: Multi-aspect Shared Knowledge Finding and Aligning for Cross-prompt Automated Scoring of Essay Traits**
   + Authors: Xia Li, Wenjing Pan
   + Conference: AAAI
-  + Link:https://doi.org/10.1609/aaai.v39i23.34626
+  + Link: https://doi.org/10.1609/aaai.v39i23.34626
   + <details>
       <summary>Abstract</summary>
        Cross-prompt automated essay scoring (AES) aims to train models using essays from different source prompts and test them on new target prompt essays. A core challenge of the task is to learn as much shared knowledge as possible between essays from different prompts in order to better represent new prompt essays. Previous studies primarily focus on learning this knowledge on a general, coarse-grained level, ignoring that the shared knowledge among prompts is highly detailed and contains a more comprehensive range of information that is not fully investigated. In this paper, we propose a novel multi-aspect knowledge finding and aligning optimization strategy to better acquire this detailed various shared knowledge. We also introduce LLM to extract explicit, interpretable knowledge from implicit, multi-aspect shared knowledge and use this knowledge to improve the representation and evaluation performance of new prompt essays. We conduct extensive experiments on public datasets. The results show that our approach outperforms current state-of-the-art models and is effective on cross-prompt AES. 
-    </details>
-+ **Can LLMs Clarify? Investigation and Enhancement of Large Language Models on Argument Claim Optimization**
-  + Authors: Yiran Wang, Ben He, Xuanang Chen, Le Sun
-  + Conference: COLING
-  + Link: https://aclanthology.org/2025.coling-main.273/
-  + <details>
-      <summary>Abstract</summary>
-      In argumentation, the claim is the foundational proposition that underpins the argument, serving as the central pillar upon which the argument is constructed. It guides the subsequent presentation of evidence, reasoning, and analysis, thereby facilitating the audience’s understanding of the core issue. Therefore, ensuring that the claim is precise and unambiguous is crucial for constructing a coherent and persuasive argument. While Large Language Models (LLMs) have demonstrated proficiency in text rewriting tasks such as style transfer and query rewriting, their application to claim optimization remains unexplored. Unlike other rewriting tasks, claim clarification requires the model to rewrite ambiguous or unclear segments of the claim, enhance the content by adding omitted key details, and eliminate redundant or verbose elements. Addressing this gap, this paper evaluates the performance of LLMs on the claim clarification task across various settings. While popular rewriting evaluation methods such as BLEU and Rouge rely on exact word matching, this paper introduces a novel semantic evaluation approach based on a sliding window mechanism. Three distinct LLMs, including LLama2, Mistral, and Qwen2, are assessed for their ability to clarify arguments through zero-shot or few-shot prompting, and supervised fine-tuning (SFT). Additionally, we propose a reinforcement learning-based clarification approach that optimally balances content preservation with claim clarity, thereby augmenting the performance of LLMs on the claim clarification task.
     </details>
 + **Can Large Language Models Differentiate Harmful from Argumentative Essays? Steps Toward Ethical Essay Scoring**
   + Authors: Hongjin Kim, Jeonghyun Kang, Harksoo Kim
